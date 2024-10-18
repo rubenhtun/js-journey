@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change T-Shirt Color</title>
+    <link rel="stylesheet" href="pretty.css" />
+  </head>
+  <body>
+    <!-- start project -->
+    <div class="container">
+      <h1>Change T-Shirt Color</h1>
+      <!-- t-shirt--display--section -->
+      <div class="t-shirt-display">
+        <img id="t-shirt-img" src="imgs/black-t-shirt.svg" alt="t-shirt" />
+      </div>
+      <!-- change--color--section -->
+      <div class="color-buttons">
+        <button
+          class="color-btn"
+          style="background-color: black"
+          onclick="changeColor('black')"
+        ></button>
+        <button
+          class="color-btn"
+          style="background-color: green"
+          onclick="changeColor('green')"
+        ></button>
+        <button
+          class="color-btn"
+          style="background-color: pink"
+          onclick="changeColor('pink')"
+        ></button>
+        <button
+          class="color-btn"
+          style="background-color: red"
+          onclick="changeColor('red')"
+        ></button>
+        <button
+          class="color-btn"
+          style="background-color: yellow"
+          onclick="changeColor('yellow')"
+        ></button>
+      </div>
+    </div>
+    <!-- skull--js -->
+    <script src="skull.js"></script>
+  </body>
+</html>

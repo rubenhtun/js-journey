@@ -1,0 +1,46 @@
+/* Prettier External CSS Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.t-shirt-display {
+  margin-bottom: 20px;
+}
+
+.t-shirt-display img {
+  width: 200px;
+  height: auto;
+}
+
+.color-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.color-btn:hover {
+  opacity: 0.7;
+}
+
+.color-btn:active {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
