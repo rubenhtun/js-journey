@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Typing Clone</title>
+    <link
+      rel="icon"
+      type="favicon"
+      sizes="100x100"
+      href="favicon/favicon.svg"
+    />
+    <!-- bootstrap style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- css style link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- responsive style link -->
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/efac4830e4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="skull">
+      <!-- Navigation Bar -->
+      <div class="container-fluid nav-bar">
+        <div class="logo">
+          <div class="logo-content">
+            <!-- Drawing Logo Picture With Svg -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="-680 -1030 300 180"
+            >
+              <g>
+                <path
+                  fill="#FFD700"
+                  d="M -430 -910 L -430 -910 C -424.481 -910 -420 -905.519 -420 -900 L -420 -900 C -420 -894.481 -424.481 -890 -430 -890 L -430 -890 C -435.519 -890 -440 -894.481 -440 -900 L -440 -900 C -440 -905.519 -435.519 -910 -430 -910 Z"
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -570 -910 L -510 -910 C -504.481 -910 -500 -905.519 -500 -900 L -500 -900 C -500 -894.481 -504.481 -890 -510 -890 L -570 -890 C -575.519 -890 -580 -894.481 -580 -900 L -580 -900 C -580 -905.519 -575.519 -910 -570 -910 Z "
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d="M -590 -970 L -590 -970 C -584.481 -970 -580 -965.519 -580 -960 L -580 -940 C -580 -934.481 -584.481 -930 -590 -930 L -590 -930 C -595.519 -930 -600 -934.481 -600 -940 L -600 -960 C -600 -965.519 -595.519 -970 -590 -970 Z"
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -639.991 -960.515 C -639.72 -976.836 -626.385 -990 -610 -990 L -610 -990 C -602.32 -990 -595.31 -987.108 -590 -982.355 C -584.69 -987.108 -577.68 -990 -570 -990 L -570 -990 C -553.615 -990 -540.28 -976.836 -540.009 -960.515 C -540.001 -960.345 -540 -960.172 -540 -960 L -540 -960 L -540 -940 C -540 -934.481 -544.481 -930 -550 -930 L -550 -930 C -555.519 -930 -560 -934.481 -560 -940 L -560 -960 L -560 -960 C -560 -965.519 -564.481 -970 -570 -970 C -575.519 -970 -580 -965.519 -580 -960 L -580 -960 L -580 -960 L -580 -940 C -580 -934.481 -584.481 -930 -590 -930 L -590 -930 C -595.519 -930 -600 -934.481 -600 -940 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 L -600 -960 C -600 -965.519 -604.481 -970 -610 -970 C -615.519 -970 -620 -965.519 -620 -960 L -620 -960 L -620 -940 C -620 -934.481 -624.481 -930 -630 -930 L -630 -930 C -635.519 -930 -640 -934.481 -640 -940 L -640 -960 L -640 -960 C -640 -960.172 -639.996 -960.344 -639.991 -960.515 Z "
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -460 -930 L -460 -900 C -460 -894.481 -464.481 -890 -470 -890 L -470 -890 C -475.519 -890 -480 -894.481 -480 -900 L -480 -930 L -508.82 -930 C -514.99 -930 -520 -934.481 -520 -940 L -520 -940 C -520 -945.519 -514.99 -950 -508.82 -950 L -431.18 -950 C -425.01 -950 -420 -945.519 -420 -940 L -420 -940 C -420 -934.481 -425.01 -930 -431.18 -930 L -460 -930 Z "
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d="M -470 -990 L -430 -990 C -424.481 -990 -420 -985.519 -420 -980 L -420 -980 C -420 -974.481 -424.481 -970 -430 -970 L -470 -970 C -475.519 -970 -480 -974.481 -480 -980 L -480 -980 C -480 -985.519 -475.519 -990 -470 -990 Z"
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -630 -910 L -610 -910 C -604.481 -910 -600 -905.519 -600 -900 L -600 -900 C -600 -894.481 -604.481 -890 -610 -890 L -630 -890 C -635.519 -890 -640 -894.481 -640 -900 L -640 -900 C -640 -905.519 -635.519 -910 -630 -910 Z "
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -515 -990 L -510 -990 C -504.481 -990 -500 -985.519 -500 -980 L -500 -980 C -500 -974.481 -504.481 -970 -510 -970 L -515 -970 C -520.519 -970 -525 -974.481 -525 -980 L -525 -980 C -525 -985.519 -520.519 -990 -515 -990 Z "
+                ></path>
+                <path
+                  fill="#FFD700"
+                  d=" M -660 -910 L -680 -910 L -680 -980 C -680 -1007.596 -657.596 -1030 -630 -1030 L -430 -1030 C -402.404 -1030 -380 -1007.596 -380 -980 L -380 -900 C -380 -872.404 -402.404 -850 -430 -850 L -630 -850 C -657.596 -850 -680 -872.404 -680 -900 L -680 -920 L -660 -920 L -660 -900 C -660 -883.443 -646.557 -870 -630 -870 L -430 -870 C -413.443 -870 -400 -883.443 -400 -900 L -400 -980 C -400 -996.557 -413.443 -1010 -430 -1010 L -630 -1010 C -646.557 -1010 -660 -996.557 -660 -980 L -660 -910 Z "
+                ></path>
+              </g>
+            </svg>
+            <h2 class="logo-text">monkeytype</h2>
+          </div>
+          <div class="nav-icon">
+            <i class="fa-regular fa-keyboard"></i>
+            <i class="fa-solid fa-crown"></i>
+            <a href="https://monkeytype.com/about" target="_blank"
+              ><i class="fa-solid fa-circle-info"></i
+            ></a>
+            <a href="https://monkeytype.com/settings" target="_blank"
+              ><i class="fa-solid fa-gear"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="user-log-in">
+          <i class="fa-solid fa-bell" type="button"></i>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+
+      <!-- Menu Bar -->
+      <div class="menu-bar">
+        <div class="test-settings">
+          <a href="#"
+            ><i class="fa-solid fa-gear"></i
+            >&nbsp;&nbsp;Test&nbsp;&nbsp;settings</a
+          >
+        </div>
+
+        <div class="menu-list">
+          <a href="#" class="tablink" id="punctuation">@ punctuation</a>
+          <a href="#" class="tablink"># numbers</a>
+        </div>
+
+        <span
+          style="
+            width: 4px;
+            height: 25px;
+            background-color: #928c87;
+            border-radius: 2px;
+            opacity: 0.2;
+          "
+        ></span>
+
+        <div class="menu-list">
+          <a href="#" class="tablink" id="time"
+            ><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;time</a
+          >
+          <a href="#" class="tablink"
+            ><i class="fa-solid fa-a"></i>&nbsp;&nbsp;words</a
+          >
+          <a href="#" class="tablink"
+            ><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;quote</a
+          >
+          <a href="#" class="tablink"
+            ><i class="fas fa-yin-yang"></i>&nbsp;&nbsp;zen</a
+          >
+          <a href="#" class="tablink"
+            ><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;custom</a
+          >
+        </div>
+
+        <span
+          style="
+            width: 4px;
+            height: 25px;
+            background-color: #928c87;
+            border-radius: 2px;
+            opacity: 0.2;
+          "
+        ></span>
+
+        <div class="menu-list">
+          <a href="#" class="tablink">15</a>
+          <a href="#" class="tablink" id="30second">30</a>
+          <a href="#" class="tablink">60</a>
+          <a href="#" class="tablink">120</a>
+          <a href="#" class="tablink"
+            ><i class="fa-solid fa-screwdriver-wrench"></i
+          ></a>
+        </div>
+      </div>
+      <h3
+        id="timer"
+        style="
+          position: absolute;
+          top: 170px;
+          left: 50px;
+          color: #e2b714;
+          display: none;
+        "
+      >
+        00 : 00
+      </h3>
+    </div>
+
+    <div class="trunk">
+      <!-- Language Option -->
+      <div class="language-option">
+        <i class="fa-solid fa-earth-americas"></i>&nbsp;&nbsp;&nbsp;
+        <span>english</span>
+      </div>
+
+      <!-- Typing Text -->
+      <div class="container-fluid typing-test">
+        <div type="text" id="mention-text"></div>
+        <textarea placeholder="" id="input-text"></textarea>
+      </div>
+
+      <!-- Restart Test -->
+      <div class="restart-test">
+        <button type="button" class="restart-btn">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+      <div class="restart-info">
+        <p><span>off</span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;restart test</p>
+        <p>
+          <span>esc</span>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<span
+            >ctrl</span
+          >
+          + <span>shift</span> +
+          <span>p</span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;command line
+        </p>
+      </div>
+
+      <div class="footer-content">
+        <div class="get-info">
+          <a href="#" class="contact"
+            ><i class="fa-solid fa-envelope"></i> contact</a
+          >
+          <a href="#" class="support"
+            ><i class="fa-solid fa-circle-dollar-to-slot"></i> support</a
+          >
+          <a href="https://github.com/monkeytypegame/monkeytype" target="_blank"
+            ><i class="fa-solid fa-code"></i> github</a
+          >
+          <a href="https://discord.com/invite/monkeytype" target="_blank"
+            ><i class="fa-brands fa-discord"></i> discord</a
+          >
+          <a href="https://x.com/monkeytype" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> twitter</a
+          >
+          <a href="https://monkeytype.com/terms-of-service" target="_blank"
+            ><i class="fa-solid fa-file-contract"></i> terms</a
+          >
+          <a href="https://monkeytype.com/security-policy" target="_blank"
+            ><i class="fa-solid fa-shield-halved"></i> security</a
+          >
+          <a href="https://monkeytype.com/privacy-policy" target="_blank"
+            ><i class="fa-solid fa-lock"></i> privacy</a
+          >
+        </div>
+
+        <div class="version">
+          <a href="#"><i class="fa-solid fa-palette"></i> serika dark</a>
+          <a href="#"><i class="fa-solid fa-code-branch"></i> v24.24.0</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Announcements -->
+    <div class="announce-notify">
+      <div class="announcement-content" style="height: auto; padding: 0.5rem">
+        <h5><i class="fa-solid fa-bullhorn"></i> Announcements</h5>
+        <p>Nothing&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;show</p>
+      </div>
+
+      <div class="seperate-line"></div>
+
+      <div class="notification-content" style="height: auto; padding: 0.5rem">
+        <h5><i class="fa-solid fa-message"></i> Notifications</h5>
+        <p>Nothing&nbsp;&nbsp;to&nbsp;&nbsp;show</p>
+      </div>
+    </div>
+
+    <!-- Contact Information Modal-->
+    <div class="modal contact-info" style="display: none">
+      <div class="modal-content contact-content">
+        <h4>Contact</h4>
+        <p>
+          Feel free to send an email to contact@monkeytype.com. For business
+          inquiries, email jack@monkeytype.com (the buttons below will open the
+          default mail client).
+        </p>
+        <p>
+          Please <span style="color: #ca4754">do not send</span> requests to
+          delete account, update email, update name or clear personal bests -
+          you can do that in the settings page.
+        </p>
+        <div class="info-container">
+          <div class="question">
+            <i class="fa-solid fa-circle-question"></i>
+            <h4>Question</h4>
+          </div>
+          <div class="feedback">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h4>Feedback</h4>
+          </div>
+          <div class="bug-report">
+            <i class="fa-solid fa-bug"></i>
+            <h4>Bug Report</h4>
+          </div>
+          <div class="account-help">
+            <i class="fa-solid fa-circle-user"></i>
+            <h4>Account Help</h4>
+          </div>
+          <div class="business-inquiry">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Business Inquiry</h4>
+          </div>
+          <div class="other">
+            <i class="fa-solid fa-ellipsis"></i>
+            <h4>Other</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support Monkeytype Modal-->
+    <div class="modal support-info" style="display: none">
+      <div class="modal-content support-content">
+        <h4>Support Monkeytype</h4>
+        <p>
+          Thank you so much for thinking about supporting this project. It would
+          not be possible without you and your continued support.
+          <i class="fa-solid fa-heart"></i>
+        </p>
+        <div class="support-container">
+          <a href="#">
+            <div class="ads">
+              <i class="fa-solid fa-rectangle-ad"></i><br />
+              <h6>Enable Ads</h6>
+            </div>
+          </a>
+          <a href="https://ko-fi.com/monkeytype" target="_blank">
+            <div class="donate">
+              <i class="fa-solid fa-circle-dollar-to-slot"></i><br />
+              <h6>Donate</h6>
+            </div>
+          </a>
+          <a href="https://www.patreon.com/monkeytype" target="_blank">
+            <div class="join-patreon">
+              <i class="fab fa-fw fa-patreon"></i><br />
+              <h6>Join Patreon</h6>
+            </div>
+          </a>
+          <a href="https://www.monkeytype.store/" target="_blank">
+            <div class="buy-merch">
+              <i class="fa-solid fa-shirt"></i><br />
+              <h6>Buy Merch</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monkey Typing Result -->
+    <div class="modal typing-result" style="display: none">
+      <div class="modal-content result-details" style="position: relative">
+        <div class="result-display">
+          <h3 style="margin: 0; padding: 0; line-height: 1">wpm</h3>
+          <div class="wpm-value" style="color: #e2b714; line-height: 1"></div>
+          <h3 style="margin: 0; padding: 0; line-height: 1">acc</h3>
+          <div
+            class="accuracy-percent"
+            style="color: #e2b714; line-height: 1"
+          ></div>
+          <h6>test type</h6>
+          <span style="color: #e2b714; font-size: 1.1rem">
+            time&nbsp;&nbsp;
+          </span>
+          <h6 class="time" style="display: inline-block; color: #e2b714"></h6>
+          <h6 style="color: #e2b714">english</h6>
+        </div>
+
+        <div
+          class="seperate-line"
+          style="
+            width: 1px;
+            height: 300px;
+            background-color: #fff;
+            margin: 0 3rem;
+          "
+        ></div>
+
+        <div class="result-info">
+          <div>
+            <span>raw</span>
+            <h1 class="wpm-value" style="color: #e2b714"></h1>
+          </div>
+          <div>
+            <span>characters</span>
+            <h1 class="characters" style="color: #e2b714"></h1>
+          </div>
+          <div>
+            <span>consistency</span>
+            <h1 class="consistency" style="color: #e2b714"></h1>
+          </div>
+          <div>
+            <span>time</span>
+            <h1 class="time" style="color: #e2b714"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script links -->
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

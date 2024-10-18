@@ -1,0 +1,251 @@
+@media only screen and (max-width: 3840px) {
+  .test-settings {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .test-settings {
+    display: none;
+  }
+  .nav-bar,
+  .footer-content {
+    max-width: 85vw;
+  }
+  .menu-bar {
+    max-width: 74vw;
+  }
+  .typing-test {
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav-bar,
+  .footer-content {
+    max-width: 95vw;
+  }
+  .menu-bar {
+    width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu-list a {
+    padding: 0 8px;
+    font-size: 0.75rem;
+  }
+  .footer-content a {
+    font-size: 0.72rem;
+  }
+  .get-info {
+    grid-template-columns: repeat(4, auto);
+  }
+  .version {
+    grid-template-columns: repeat(1, auto);
+  }
+  .support-content {
+    height: 438px;
+  }
+  .support-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .result-details {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .contact-content {
+    width: 840px;
+  }
+  .support-content {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .menu-bar {
+    width: 85vw;
+  }
+  .logo-text {
+    font-size: 1.6rem;
+  }
+  .nav-icon i,
+  .user-log-in i {
+    font-size: 1rem;
+    padding: 7px;
+    margin: 0;
+  }
+  .menu-list a {
+    padding: 0 6px;
+    font-size: 0.6rem;
+  }
+  .typing-test {
+    width: 85vw;
+  }
+  .typing-test #mention-text,
+  #input-text {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-content {
+    width: 800px;
+    height: 494px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-content {
+    width: 760px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-content {
+    width: 90vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .info-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .support-content {
+    height: 450px;
+  }
+  .result-info {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 180px;
+  }
+  .result-info div {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 0 25px 0 15px;
+  }
+  .logo-text {
+    display: none;
+  }
+  .nav-icon i,
+  .user-log-in i {
+    font-size: 0.9rem;
+    padding: 7px;
+    margin: 0;
+  }
+  .menu-bar {
+    width: 160px;
+  }
+  .menu-bar span,
+  .menu-list {
+    display: none;
+  }
+  .test-settings {
+    display: block;
+  }
+  .test-settings a {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+  .typing-test {
+    width: 97vw;
+  }
+  .typing-test #mention-text,
+  #input-text {
+    font-size: 1.7rem;
+  }
+  .footer-content {
+    padding: 0 10px;
+  }
+  .info-container div,
+  .support-container div {
+    height: 50px;
+  }
+  .info-container i,
+  .support-container i {
+    font-size: 1rem;
+  }
+  .info-container h4,
+  .support-container h6 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  .support-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .support-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .footer-content a {
+    font-size: 0.7rem;
+  }
+  .get-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .version {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 581px) {
+  .nav-icon i,
+  .user-log-in i {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  .support-content {
+    height: 460px;
+  }
+  .result-info {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .get-info {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .support-content {
+    height: 88vh;
+  }
+  .support-content {
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .seperate-line {
+    display: none;
+  }
+  .result-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .result-display div {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .get-info {
+    grid-template-columns: repeat(1, auto);
+  }
+}
