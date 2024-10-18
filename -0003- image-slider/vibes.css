@@ -1,0 +1,58 @@
+/* external vibes css */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-container {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  padding: 2px;
+  background: linear-gradient(
+    99deg,
+    #ed6a7a 0.79%,
+    #ec5d98 17.05%,
+    #eb46cc 31.78%,
+    #d538e4 43.46%,
+    #c632ed 56.67%,
+    #b927f6 68.35%,
+    #7e19f5,
+    #6c15f5 93.75%
+  );
+  border-radius: 8px;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
