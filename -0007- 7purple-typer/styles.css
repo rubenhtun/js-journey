@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Added padding to improve spacing on small screens */
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%; /* Set to 100% for small screens */
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-display {
+  font-size: 1.2rem;
+  color: #666;
+  background-color: #eef2f3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+#typing-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#typing-input:focus {
+  border-color: #36b0c9;
+}
+
+.results {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #36b0c9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e87a5;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-display {
+    font-size: 1rem;
+  }
+
+  #typing-input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
