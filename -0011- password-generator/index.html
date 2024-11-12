@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-100">
+      <h1 class="text-2xl font-bold text-center mb-4">Password Generator</h1>
+
+      <!-- Password Display -->
+      <div class="flex items-center space-x-2 w-full mb-4">
+        <input
+          type="text"
+          id="password"
+          class="flex-1 px-4 py-2 border border-gray-300 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Generated password"
+          readonly
+        />
+        <button
+          id="copyBtn"
+          class="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition"
+        >
+          Copy
+        </button>
+      </div>
+
+      <!-- Settings -->
+      <div class="mb-4">
+        <label class="flex items-center">
+          <input type="checkbox" id="includeLowercase" class="mr-2" />
+          <span>Include Lowercase</span>
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" id="includeUppercase" class="mr-2" />
+          <span>Include Uppercase</span>
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" id="includeNumbers" class="mr-2" />
+          <span>Include Numbers</span>
+        </label>
+        <label class="flex items-center">
+          <input type="checkbox" id="includeSymbols" class="mr-2" />
+          <span>Include Symbols</span>
+        </label>
+      </div>
+
+      <!-- Password Length -->
+      <div class="mb-4">
+        <label for="length" class="block mb-2">Password Length</label>
+        <input
+          type="number"
+          id="length"
+          class="w-full p-2 border border-gray-300 rounded-lg"
+          value="12"
+          min="4"
+          max="20"
+        />
+      </div>
+
+      <!-- Generate Button -->
+      <button
+        id="generateBtn"
+        class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
+      >
+        Generate Password
+      </button>
+
+      <!-- Success Message -->
+      <p id="successMessage" class="text-green-500 text-center mt-4 hidden">
+        Password copied to clipboard!
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
