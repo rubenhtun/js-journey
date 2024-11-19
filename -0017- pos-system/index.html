@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-4">
+      <h1 class="text-center text-2xl font-bold">POS System</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main class="p-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Products -->
+        <div id="products" class="col-span-2">
+          <h2 class="text-xl font-bold mb-4">Products</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Product cards go here -->
+          </div>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart" class="bg-white p-4 rounded shadow">
+          <h2 class="text-xl font-bold mb-4">Cart</h2>
+          <ul id="cart-items" class="space-y-4">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <div class="mt-4 border-t pt-4">
+            <p class="text-lg">Total: $<span id="total-price">0.00</span></p>
+            <button
+              class="mt-2 w-full bg-green-500 text-white py-2 rounded"
+              onClick="checkout()"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
