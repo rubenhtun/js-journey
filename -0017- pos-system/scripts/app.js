@@ -34,7 +34,7 @@ products.forEach((product) => {
 const addToCart = (productId) => {
   // products array ထဲမှ prodcutId နှင့်တူညီသော product ကို ရှာ။
   const addedProduct = products.find((product) => product.id === productId);
-  // product တစ်ခု ကို တစ်ကြိမ်သာလျှင် cart အတွင်းထည့်နိုင်ရန် // လက်ရှိပြန်ထည့်လိုက်တဲ့ product ဟာ cart ရှိ/မရှိ စစ်ဆေးခြင်း
+  // product တစ်ခု ကို တစ်ကြိမ်သာလျှင် cart အတွင်းထည့်နိုင်ရန် // လက်ရှိပြန်ထည့်မယ့် product ဟာ cart ရှိ/မရှိ စစ်ဆေးခြင်း
   const isInCart = cart.some((item) => item.id === productId);
   // မရှိဘူး သေချာပြီဆိုမှသာ အောက်က codes တွေကို run ပါမည်။
   if (addedProduct && !isInCart) {
