@@ -75,7 +75,7 @@ const removeFromCart = (productId) => {
 
 const checkout = () => {
   if (totalCost) {
-    alert("You payment is successful!");
+    alert("Your purchase is successful!");
   }
   refreshPage();
 };
