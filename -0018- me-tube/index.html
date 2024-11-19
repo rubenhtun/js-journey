@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeTube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navbar -->
+    <header class="bg-gray-800 px-4 py-3 flex justify-between items-center">
+      <!-- Sidebar Toggle -->
+      <button id="sidebarToggle" class="text-gray-100 text-xl md:hidden mx-4">
+        ☰
+      </button>
+
+      <!-- Logo -->
+      <div class="text-red-500 text-2xl font-bold">MeTube</div>
+
+      <!-- Search Bar -->
+      <div class="flex-grow mx-4 relative">
+        <input
+          id="videoLinkInput"
+          type="text"
+          placeholder="Paste video link here..."
+          class="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-200 placeholder-gray-400 focus:outline-none"
+        />
+        <button
+          id="addVideoButton"
+          class="absolute top-0 right-0 px-4 py-2 bg-red-500 text-white rounded-r hover:bg-red-600"
+        >
+          Add
+        </button>
+      </div>
+
+      <!-- Profile Icon -->
+      <div
+        class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center text-sm"
+      >
+        U
+      </div>
+    </header>
+
+    <!-- Page Layout -->
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside
+        id="sidebar"
+        class="w-60 bg-gray-800 h-screen p-4 space-y-4 hidden md:block"
+      >
+        <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded">Home</a>
+        <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
+          >Trending</a
+        >
+        <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
+          >Subscriptions</a
+        >
+        <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
+          >Library</a
+        >
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-grow p-6">
+        <h1 class="text-2xl mb-6">Videos</h1>
+        <div
+          id="videoGrid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Videos will be added dynamically here -->
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
