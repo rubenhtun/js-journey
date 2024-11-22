@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <!-- tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen flex items-center justify-center"
+  >
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-6">Rock-Paper-Scissors</h1>
+      <div class="flex justify-center space-x-6 mb-6">
+        <button
+          class="transform hover:scale-125 transition duration-200"
+          onclick="playerChoice('rock')"
+        >
+          <span class="text-6xl">✊</span>
+        </button>
+        <button
+          class="transform hover:scale-125 transition duration-200"
+          onclick="playerChoice('paper')"
+        >
+          <span class="text-6xl">✋</span>
+        </button>
+        <button
+          class="transform hover:scale-125 transition duration-200"
+          onclick="playerChoice('scissors')"
+        >
+          <span class="text-6xl">✌️</span>
+        </button>
+      </div>
+      <div id="result" class="text-xl font-semibold mt-4"></div>
+    </div>
+
+    <!-- script link -->
+    <script src="winner.js"></script>
+  </body>
+</html>
