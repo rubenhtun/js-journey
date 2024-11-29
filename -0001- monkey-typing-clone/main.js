@@ -129,16 +129,16 @@ inputText.addEventListener("input", () => {
 
 // Refreshing the paragraphs
 restartBtn.addEventListener("click", () => {
+  clearInterval(timer);
+  setTimer.style.display = "none";
+  document.getElementById("timer").textContent = "00 : 00";
+
   inputText.value = "";
   startTyping();
   restartBtn.classList.add("rotate");
   restartBtn.addEventListener("animationend", () => {
     restartBtn.classList.remove("rotate");
   });
-
-  clearInterval(timer);
-  setTimer.style.display = "none";
-  document.getElementById("timer").textContent = "00 : 00";
 });
 
 document.querySelector(".fa-regular").addEventListener("click", () => {
