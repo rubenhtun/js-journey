@@ -1,0 +1,116 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container for the Proverb Section */
+#proverb-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styling each Proverb Box */
+.proverb {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proverb:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the Proverb Text */
+.proverb p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 5px 0;
+  color: #555;
+}
+
+.proverb p strong {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Add some spacing between proverb content */
+.proverb-content,
+.proverb-translation {
+  margin-bottom: 10px;
+}
+
+/* Styling for heading */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Styling for footer */
+footer {
+  padding: 30px 20px;
+  color: #333;
+  font-size: 1.1em;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+footer a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #1c6b9e;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adding some animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#proverb-container {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  #proverb-container {
+    padding: 15px;
+  }
+
+  .proverb {
+    padding: 10px;
+  }
+
+  .proverb p {
+    font-size: 1em;
+  }
+}

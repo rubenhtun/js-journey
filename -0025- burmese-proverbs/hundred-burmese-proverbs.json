@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "proverb": "တန်နှင့်အားကို လေးနှင့်မြှားကဲ့သို့ ညီအောင်လုပ်ပါ။",
+    "translation": "Adjust burden to strength, like arrow to bow."
+  },
+  {
+    "id": 2,
+    "proverb": "မရဲသော်လည်း ပြေးခဲစေ။",
+    "translation": "Although cowardly be slow to run."
+  },
+  {
+    "id": 3,
+    "proverb": "ပညာရှိအမျက် အပြင်မထွက်။",
+    "translation": "The anger of the prudent never shows."
+  },
+  {
+    "id": 4,
+    "proverb": "စစ်မရောက်ခင် မြှားကုန်။",
+    "translation": "Arrows all gone before the battle begins."
+  },
+  {
+    "id": 5,
+    "proverb": "သမင်မွေးရင်း ကျားစားရင်း။",
+    "translation": "As the doe gives birth to a fawn the tiger eats it."
+  },
+  {
+    "id": 6,
+    "proverb": "စားရမှာလည်း သဲတရှပ်ရှပ်၊ လွှင့်ပစ်ရမှာကလည်း အဆီနဲ့ တဝင်းဝင်း။",
+    "translation": "As to eating it, will it is covered with grit; but as to throwing it away, well, it is rich and luscious."
+  },
+  {
+    "id": 7,
+    "proverb": "စားရကံကြုံတော့ မုတ်ဆိိတ်ပျားစွဲ။",
+    "translation": "As you are fated to eat honey, bees swarm in your beard."
+  },
+  {
+    "id": 8,
+    "proverb": "မသိလျှင်မေး၊ မစင်လျှင်ဆေး။",
+    "translation": "Ask when you don't know, wash when you're dirty."
+  },
+  {
+    "id": 9,
+    "proverb": "ငါးစိမ်းမြင်၊ ငါးကင်ပစ်။",
+    "translation": "See the fish, throw the fish."
+  },
+  {
+    "id": 10,
+    "proverb": "သားသမီးမကောင်း မိဘခေါင်း။",
+    "translation": "Bad children? Blame the parents."
+  },
+  {
+    "id": 11,
+    "proverb": "ဆင်ဖြူမျက်နှာ ဆင်မည်း မကြည့်ဝံ့။",
+    "translation": "The black elephant dare not look at the royal white elephant's face."
+  },
+  {
+    "id": 12,
+    "proverb": "ကျားကြောက်လို့ ရှင်ကြီးကိုး၊ ရှင်ကြီး ကျားထက်ဆိုး။",
+    "translation": "Being afraid of the tiger he takes refuge with the lord Spirit, but the lord Spirit is worse than the tiger."
+  },
+  {
+    "id": 13,
+    "proverb": "ကျားကြီးတေ့ာ ခြေရာကြီး။",
+    "translation": "The bigger the tiger, the bigger the pug-marks."
+  },
+  {
+    "id": 14,
+    "proverb": "ကြက်ကန်း ဆန်အိုးတိုး။",
+    "translation": "A blind fowl came upon the rice-pot."
+  },
+  {
+    "id": 15,
+    "proverb": "မျက်ကန်းတစ်ဆေမကြောက်။",
+    "translation": "The blind man is not afraid of ghosts."
+  },
+  {
+    "id": 16,
+    "proverb": "သမီးတစ်ကောင် နွားတစ်ထောင်။",
+    "translation": "The care of one daughter equals that of a thousand cattle."
+  },
+  {
+    "id": 17,
+    "proverb": "တောမီးလောင် တောကြောင် လက်ခမောင်းခတ်။",
+    "translation": "The cat jumps with joy when the forest is on fire."
+  },
+  {
+    "id": 18,
+    "proverb": "ရွှေနားကပ်ရောင်ကြောင့် ပါးပြောင်။",
+    "translation": "Cheeks shining because of gold earrings."
+  },
+  {
+    "id": 19,
+    "proverb": "ခု ရေတွင်းတူး၊ ခု ရေကြည်သောက်၍ မရ။",
+    "translation": "Clear water cannot be obtained from a well that has just been dug."
+  },
+  {
+    "id": 20,
+    "proverb": "ကြက်မတွန်၍ မိုးမလင်း၊ ကြက်ဖတွန်မှ မိုးလင်းသည်။",
+    "translation": "Day will not break for a hen's cackle; it will break only for a cock's crow."
+  },
+  {
+    "id": 21,
+    "proverb": "အရင်လို အနှေးဖြစ်။",
+    "translation": "Desire for haste is delay."
+  },
+  {
+    "id": 22,
+    "proverb": "တောင်းစုတ် ပလုံးစုတ်သာ ပစ်ရိုးထုံးစံ ရှိသည်။ သားဆိုးသမီးဆိုးကို ပစ်ရိုးထုံးစံမရှိ။",
+    "translation": "Discard only bad baskets and punnets, not bad sons and daughters."
+  },
+  {
+    "id": 23,
+    "proverb": "မယားနဲ့နွား မသနားနဲ့။",
+    "translation": "Do not spare a bullock or a wife."
+  },
+  {
+    "id": 24,
+    "proverb": "ကံယုုံ၍ ဆူးပုံမနင်းနဲ့။",
+    "translation": "Do not tread on a heap of thorns because you have faith in your karma."
+  },
+  {
+    "id": 25,
+    "proverb": "တစ်တက်စားလည်း ကြက်သွန်၊ နှစ်တက်စားလည်းကြက်သွန်။",
+    "translation": "One time eating is garlic, two times eating is still garlic."
+  },
+  {
+    "id": 26,
+    "proverb": "နူရာ ဝဲစွဲ။",
+    "translation": "Eczema comes on the teprous place."
+  },
+  {
+    "id": 27,
+    "proverb": "တောက်မည့်မီးခဲ တရဲရဲ။",
+    "translation": "An ember about to blaze glows brightly."
+  },
+  {
+    "id": 28,
+    "proverb": "ငွေမရှိ စကားမတည်။",
+    "translation": "Empty pockets, empty promises."
+  },
+  {
+    "id": 29,
+    "proverb": "ပျက်အစဉ် ပြင်ခဏ။",
+    "translation": "An error may go on forever, but it can be set right in a moment."
+  },
+  {
+    "id": 30,
+    "proverb": "မချစ်သော်လည်း အောင့်ကာနမ်း၊ နမ်းသော်လည်း ပင့်သက်ရှူ။",
+    "translation": "Even if you do not love him (her), hold your breath and kiss him (her), even if you do not kiss him (her), heave a sigh."
+  },
+  {
+    "id": 31,
+    "proverb": "ကျားရှေ့ မှောက်ရက်လဲ။",
+    "translation": "Falling face downwards in front of the tiger."
+  },
+  {
+    "id": 32,
+    "proverb": "ခြင်းကြားနဲ့ ရေသယ်။",
+    "translation": "Fetching water in an open wicker basket."
+  },
+  {
+    "id": 33,
+    "proverb": "ဆင်ပါးစပ် နှမ်းပက်။",
+    "translation": "Flipping sesame seeds into an elephant's mouth."
+  },
+  {
+    "id": 34,
+    "proverb": "အကွပ်မရှိကြမ်း ပရမ်းပတာ။",
+    "translation": "A floor which has no binding is in disorder."
+  },
+  {
+    "id": 35,
+    "proverb": "ခွေးကလေး အရောဝင်တော့ ပါးလျက် နားလျက်။",
+    "translation": "Fondle a dog and it will lick your face."
+  },
+  {
+    "id": 36,
+    "proverb": "နောင်ခါလာ နောင်ခါစျေး။",
+    "translation": "The future price will be fixed in the future; sell it at the current price."
+  },
+  {
+    "id": 37,
+    "proverb": "လယ်ထွန်သွား နွားမေ့။",
+    "translation": "Going to plough and forgetting the cattle."
+  },
+  {
+    "id": 38,
+    "proverb": "အစကောင်းမှ အနှောင်းသေချာ။",
+    "translation": "A good beginning ensures a satisfactory ending."
+  },
+  {
+    "id": 39,
+    "proverb": "သစ်တစ်ပင်ကောင်း ငှက်တစ်သောင်းနားနိုင်။",
+    "translation": "A good tree can lodge ten thousand birds."
+  },
+  {
+    "id": 40,
+    "proverb": "ရင်ခုန်ရင်း ဘုရားကိုကြည့်။",
+    "translation": "Looking to God in times of trouble."
+  },
+  {
+    "id": 41,
+    "proverb": "ဘဲကြောင်တိုက်ရင် ဘဲတွေကို ရွေး။",
+    "translation": "When fighting a rooster, choose the hens."
+  },
+  {
+    "id": 42,
+    "proverb": "လက်ထပ်သူ အိမ်တိုင်သင်္ကာကမ်း.",
+    "translation": "A married man’s house is like the edge of the roof."
+  },
+  {
+    "id": 43,
+    "proverb": "လက်လုံးနာရေးမပြတ်၊ ခံစားချက်ထွက်ချင်။",
+    "translation": "A wound may never heal, but the feeling of it can pass."
+  },
+  {
+    "id": 44,
+    "proverb": "နှုတ်ကပတ်မလျှောက်ရင် နှုတ်ကပ်ဖြစ်။",
+    "translation": "A mouth that does not speak, becomes sealed."
+  },
+  {
+    "id": 45,
+    "proverb": "တစ်ဖန်တည်းထွက်တဲ့ကြီးတို့၊ တစ်ကြိမ်တည်းချီးတွဲခြင်း။",
+    "translation": "The first time is the hardest, the second time comes easier."
+  },
+  {
+    "id": 46,
+    "proverb": "သခင်ခေါ်တဲ့အခါလမ်းပြသမဲ့၊ စားပြီးပဲ ကျွန်တော်ခေါ်ရမယ်။",
+    "translation": "When the master calls, the path appears; after eating, I must call."
+  },
+  {
+    "id": 47,
+    "proverb": "ပစ္စည်းတစ်ခုဟာ စွန်းနှင့်ထွက်မှ အကျိုးတရားပေးတယ်။",
+    "translation": "A thing yields its value after it leaves the warehouse."
+  },
+  {
+    "id": 48,
+    "proverb": "လှည့်ခေါင်းကာဆုတ်ထွက်နည်း၊ ကောင်းကင်လမ်းဖောက်တယ်။",
+    "translation": "Turning the neck is easy; breaking the sky is hard."
+  },
+  {
+    "id": 49,
+    "proverb": "မရှိရင် မရရင်၊ ကြည့်ရာမှ လောကလမ်းလဲ ပျော်လမ်းပါ။",
+    "translation": "If nothing, and no way, the world will lead you to joy."
+  },
+  {
+    "id": 50,
+    "proverb": "မြင်သာရင် နောက်ကြောင်းမှတ်မလား။",
+    "translation": "Once the fruit is visible, will you miss the rest of the journey?"
+  },
+  {
+    "id": 51,
+    "proverb": "ခေါင်းပြုံးမှုနောက်တော့ ပင်လယ်မီးအကောင်အတိုင်းမှာ။",
+    "translation": "After the laugh, comes the fire like the sea."
+  },
+  {
+    "id": 52,
+    "proverb": "ကြံ့ခံသည်တိုင်လား၊ ပုံသဏ္ဌာန်တန်သေးလား၊",
+    "translation": "How long can one endure? Will the form last?"
+  },
+  {
+    "id": 53,
+    "proverb": "အချိန်မြန်တတ်တယ်၊ ဆက်ဖို့ကြောင်းမှဆက်ဖွယ်လည်းအရမ်းကိုပါပဲ။",
+    "translation": "Time passes fast, but it's equally as swift to return."
+  },
+  {
+    "id": 54,
+    "proverb": "အခြေအနေများကို ပြန်မြင်လိုက်ပါသင့်ပါပဲ။",
+    "translation": "You should look back at situations."
+  },
+  {
+    "id": 55,
+    "proverb": "တကယ်လိုတတ်ဆိုရင် ဘာမှလည်းရပါဘဲ။",
+    "translation": "If you truly try, nothing is impossible."
+  },
+  {
+    "id": 56,
+    "proverb": "သတ္တိမှင်ပွဲတွေမှာ၊ ရောက်သည်ကို ထင်တယ်။",
+    "translation": "In battles of strength, they believe they’ve reached their goal."
+  },
+  {
+    "id": 57,
+    "proverb": "အမျိုးတရားအတွင်း သက်ကြီးမိန့်လျှင် ဒဏ်ခတ်။",
+    "translation": "In matters of nature, wisdom gets rewarded."
+  },
+  {
+    "id": 58,
+    "proverb": "အနာဂတ်အတွက် ခံစားရမယ့်ထိုနည်းတူရပ်လှည့်",
+    "translation": "The same path requires the same dedication for future growth."
+  },
+  {
+    "id": 59,
+    "proverb": "အမှားသွား၍ မှားသော်လည်း တစ်ကွက်အခြားလမ်းလေး။",
+    "translation": "Even after a mistake, there is always another way forward."
+  },
+  {
+    "id": 60,
+    "proverb": "အပ်ဖြင့် ထွင်း၍ရလျှင်၊ ပုဆိန်ဖြင့် မခုတ်ရ။",
+    "translation": "If the beginning is good, the end must be perfect."
+  },
+  {
+    "id": 61,
+    "proverb": "နွားကွဲလျှင် ကျားဆွဲမည်။",
+    "translation": "If the cattle are scattered the tiger seizes him."
+  },
+  {
+    "id": 62,
+    "proverb": "မီးများ မီးနိုင်၊ ရေများ ရေနိုင်။",
+    "translation": "If the fire is greater the fire wins; if the water is greater the water wins."
+  },
+  {
+    "id": 63,
+    "proverb": "ဆူးပေါ်ဖက်ကျလျှင် ဖက်ပေါက်သည်။ ဖက်ပေါ်ဆူးကျလျှင် ဖက်ပေါက်သည်။",
+    "translation": "If there is a question, there is also an answer."
+  },
+  {
+    "id": 64,
+    "proverb": "အမေးရှိလျှင် အဖြေရှိသည်။",
+    "translation": "If you carry the world 'No' with you, you will never be poor even in old age."
+  },
+  {
+    "id": 65,
+    "proverb": "ဘူးတစ်လုံးဆောင် အိုတောင်မဆင်းရဲ။",
+    "translation": "If you do not know, ask; if it is not clean, wash."
+  },
+  {
+    "id": 66,
+    "proverb": "မသိလျှင်မေး၊ မစင်လျှင်ဆေး။",
+    "translation": "If you don't believe me, ask my wife."
+  },
+  {
+    "id": 67,
+    "proverb": "မယုံရင် ငါ့မယားကိုမေး။",
+    "translation": "If you want to go fast, go the old road."
+  },
+  {
+    "id": 68,
+    "proverb": "အလျင်လို လမ်းအိုလိုက်။",
+    "translation": "If your desire is great, you obtain little."
+  },
+  {
+    "id": 69,
+    "proverb": "အလိုကြီးက အရနည်းသည်။",
+    "translation": "Ignorance is more troublesome to me than poverty."
+  },
+  {
+    "id": 70,
+    "proverb": "မရှိတာထက် မသိထာခက်သည်။",
+    "translation": "In a basket it is the binding, in a man it is his clothes."
+  },
+  {
+    "id": 71,
+    "proverb": "တောင်းမှာအကွပ်၊ လူမှာအဝတ်။",
+    "translation": "In a forest where there is no heart-wood the castor-oil plant rules."
+  },
+  {
+    "id": 72,
+    "proverb": "အနှစ်မရှိတဲ့တော ကြက်ဆူပင် မင်းမူ။",
+    "translation": "In another's eyes, but in his own eyes he sees no dirt."
+  },
+  {
+    "id": 73,
+    "proverb": "အခြားလူများ၏ မျက်ချေးကိုမြင်၍ ကိုယ့်မျက်ချေးကိုယ်မမြင်။",
+    "translation": "In journeying at an improper time, one step; in eating improper food, one mouthful is sufficient to cause mishap."
+  },
+  {
+    "id": 74,
+    "proverb": "အစားမတော် တစ်လုပ်၊အသွားမတော် တစ်လှမ်း။",
+    "translation": "It is for the bird to fly and die; it is for the man to scheme and die."
+  },
+  {
+    "id": 75,
+    "proverb": "ငှက်သည် ပျံရင်းသေသည်။ လူသည် ကြံရင်းသေသည်။",
+    "translation": "It's like threading a dog's crooked tail through a joint of bamboo."
+  },
+  {
+    "id": 76,
+    "proverb": "ခွေးမြီးကောက် ကျည်တောက်စွပ်သလို။",
+    "translation": "Just as the breeze carries the flower's fragrance, so do men carry men's news."
+  },
+  {
+    "id": 77,
+    "proverb": "ပန်းသတင်း လေညှင်းဆောင် လူသတင်း လူချင်းဆောင်။",
+    "translation": "Just when he wants to cry you touch him."
+  },
+  {
+    "id": 78,
+    "proverb": "ငိုချင်လျက် လက်တို့။",
+    "translation": "Karma is the mother and karma is the father."
+  },
+  {
+    "id": 79,
+    "proverb": "ကံသာလျှင် အမိ၊ ကံသာလျှင် အဖ。",
+    "translation": "Karma watches over your property; your intelligence watches over your life."
+  },
+  {
+    "id": 80,
+    "proverb": "ဥစ္စာကံစောင့်၊ အသက်ဉာဏ်စောင့်။",
+    "translation": "A lazy man lies flat on his back, a lazy woman stretches out her legs."
+  },
+  {
+    "id": 81,
+    "proverb": "ယောက်ျားပျင်းတော့ ကျောခင်း၊ မိန်းမပျင်းတော့ ခြေဆင်း။",
+    "translation": "Let enmity stop short, but love lingers on."
+  },
+  {
+    "id": 82,
+    "proverb": "ချစ်စကို ရှည်စေ၊ မုန်းစကို တိုစေ။",
+    "translation": "Let them know about it but not see it."
+  },
+  {
+    "id": 83,
+    "proverb": "သိတာသိစေ မမြင်စေနဲ့။",
+    "translation": "Like father and grandfather alike."
+  },
+  {
+    "id": 84,
+    "proverb": "ဘမျိုးဘိုးတုူ။",
+    "translation": "Loss of good is one day spoiled; loss of a husband is a ruined life."
+  },
+  {
+    "id": 85,
+    "proverb": "ကုန်ရှုံးတော့ တစ်ရက်၊ လင်ရှုံးတော့ တစ်သက်။",
+    "translation": "A man does not lose his life if the time at which he is fated to die has not arrived."
+  },
+  {
+    "id": 86,
+    "proverb": "သေနေ့မစေ့သေးလျှင် မသေ။",
+    "translation": "The man from hell is not afraid of hot ashes."
+  },
+  {
+    "id": 87,
+    "proverb": "ငရဲကလူ ပြာပူမကြောက်။",
+    "translation": "Mice cease to fear the cat."
+  },
+  {
+    "id": 88,
+    "proverb": "ကြောင်အို ကြွက်မလေး။",
+    "translation": "The old cat no longer fears the mice."
+  },
+  {
+    "id": 89,
+    "proverb": "စိတ်ပေါင်းကိုယ်ခွာ။",
+    "translation": "Minds together, bodies apart."
+  },
+  {
+    "id": 90,
+    "proverb": "လွန်ရင်ဘေး၊ တန်ရင်ဆေး။",
+    "translation": "Moderation is medicine, excess is peril."
+  },
+  {
+    "id": 91,
+    "proverb": "အမြင့်ဆုံး သည် ပြန်လာဖို့လို",
+    "translation": "The highest peak requires a return to climb again."
+  },
+  {
+    "id": 92,
+    "proverb": "မီးအလင်းအောင် ဖွင့်တော့ပါးသည်",
+    "translation": "Even the smallest light will reveal its worth."
+  },
+  {
+    "id": 93,
+    "proverb": "ကွေ့သောပျိုးများ မှားယွင်းလွယ်",
+    "translation": "Twisted plants are easily misunderstood."
+  },
+  {
+    "id": 94,
+    "proverb": "တစ်ခါတစ်ရံ ပြီးမြောက်ခြင်း ပြန်လည်စတင်လိုသည်",
+    "translation": "Sometimes completion means starting over again."
+  },
+  {
+    "id": 95,
+    "proverb": "ရှုပ်ထွေးမှုမှ ဖြတ်သန်းပါက တိုးတက်မှုရှိမည်",
+    "translation": "Overcoming complexity leads to progress."
+  },
+  {
+    "id": 96,
+    "proverb": "တစ်ခါတစ်ရံ ခံစားမှုက ညှိလိုက်စေသည်",
+    "translation": "Sometimes, emotions can guide decisions."
+  },
+  {
+    "id": 97,
+    "proverb": "ပင်လယ်ရေထဲ ဖယ်ထုတ်နေသောငါးတိုင်း အကြီးမားသူများတင်ပဲ",
+    "translation": "The big fish are the only ones caught from the deep ocean."
+  },
+  {
+    "id": 98,
+    "proverb": "ထွက်ပြန်ကာ ကိုယ်တိုင်အပေါင်းသင်းထားသူကို ရေချိုးခြင်း",
+    "translation": "One who ventures out should wash their hands afterward."
+  },
+  {
+    "id": 99,
+    "proverb": "ပျံပြီသောကျား ပျောက်လည်း တစ်ကိုယ်တည်းအိမ်တည်",
+    "translation": "The tiger that flies still rests in its den."
+  },
+  {
+    "id": 100,
+    "proverb": "အင်္ကျီအတွင်း သင်္ကြန်အောင် ဘဝဖူးခြင်း",
+    "translation": "The robe inside brings the journey of life."
+  }
+]
