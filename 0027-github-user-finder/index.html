@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <!-- Vanilla CSS Style -->
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #36d1dc, #5b86e5);
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Form Styles */
+      #search-form {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 25px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #f8f8f8;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        color: #333;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+      }
+
+      button {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, #ff7eb3, #ff758c);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GitHub User Finder</h1>
+
+    <form id="search-form">
+      <label for="username">Enter a GitHub username:</label>
+      <input type="text" id="username" name="username" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+      const form = document.getElementById("search-form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value.trim();
+        fetchData(username);
+      });
+
+      const fetchData = async (username) => {
+        try {
+          // Fetch user data from GitHub API
+          const response = await fetch(
+            `https://api.github.com/users/${username}`
+          );
+          if (!response.ok) throw new Error("Failed to fetch data!");
+          const userdata = await response.json();
+
+          // Clear previous results
+          const results = document.getElementById("results");
+          results.innerHTML = "";
+
+          // Create a container div
+          const container = document.createElement("div");
+          container.style.cssText = `
+            margin-top: 16px;
+            padding: 16px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            background-color: #fff;
+          `;
+
+          // Create the avatar image
+          const avatar = document.createElement("img");
+          avatar.src = userdata.avatar_url;
+          avatar.alt = "Avatar";
+          avatar.style.cssText = `
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+          `;
+          container.appendChild(avatar);
+
+          // Create the name or login header
+          const nameHeader = document.createElement("h2");
+          nameHeader.textContent = userdata.name || userdata.login;
+          nameHeader.style.marginTop = "16px";
+          container.appendChild(nameHeader);
+
+          // Create the bio paragraph
+          const bio = document.createElement("p");
+          bio.textContent = userdata.bio || "No bio available.";
+          bio.style.cssText = "color: gray; margin: 8px 0;";
+          container.appendChild(bio);
+
+          // Create the followers count paragraph
+          const followers = document.createElement("p");
+          followers.textContent = `Followers: ${userdata.followers}`;
+          followers.style.margin = "8px 0";
+          container.appendChild(followers);
+
+          // Create the public repositories count paragraph
+          const publicRepos = document.createElement("p");
+          publicRepos.textContent = `Public Repositories: ${userdata.public_repos}`;
+          publicRepos.style.margin = "8px 0";
+          container.appendChild(publicRepos);
+
+          // Create the GitHub profile link
+          const profileLink = document.createElement("a");
+          profileLink.href = userdata.html_url;
+          profileLink.target = "_blank";
+          profileLink.rel = "noopener";
+          profileLink.textContent = "GitHub Profile";
+          profileLink.style.cssText = `
+            margin-top: 16px;
+            display: block;
+            color: #1976d2;
+            text-decoration: none;
+          `;
+          container.appendChild(profileLink);
+
+          // Append the container to the results div
+          results.appendChild(container);
+        } catch (err) {
+          console.error(err);
+          alert("User not found. Please try again.");
+        }
+      };
+    </script>
+  </body>
+</html>
