@@ -32,8 +32,3 @@ prevBtn.addEventListener("click", () => {
     currentImgIndex === 0 ? imgs.length - 1 : currentImgIndex - 1;
   changeImage();
 });
-
-/***************************************
-  # Minified Js
-  const imgs=["robotic-eng(1).jpg","robotic-eng(2).jpg","robotic-eng(3).jpg"];let currentImgIndex=0;const sliderImage=document.getElementById("slider-image");function changeImage(){sliderImage.src=`img/${imgs[currentImgIndex]}`}const prevBtn=document.getElementById("prevBtn"),nextBtn=document.getElementById("nextBtn");nextBtn.addEventListener("click",()=>{currentImgIndex=currentImgIndex===imgs.length-1?0:currentImgIndex+1,changeImage()}),prevBtn.addEventListener("click",()=>{currentImgIndex=0===currentImgIndex?imgs.length-1:currentImgIndex-1,changeImage()});
-***************************************/
