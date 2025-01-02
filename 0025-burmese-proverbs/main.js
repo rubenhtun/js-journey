@@ -4,11 +4,13 @@ window.onload = () => {
 
 const proverbContainer = document.getElementById("proverb-container");
 
+// async function
 const displayEachProverb = async () => {
   try {
-    const response = await fetch("hundred-burmese-proverbs.json");
+    const response = await fetch("hundred-burmese-proverbs.json"); // json file data ကို fetch လုပ်
     const data = await response.json();
 
+    // forEach ကို သုံးပြီး proverb တစ်ခုစီကို ပြသပါမည်။
     data.forEach((proverb) => {
       const proverbDiv = document.createElement("div");
       proverbDiv.classList.add("proverb");
@@ -24,6 +26,7 @@ const displayEachProverb = async () => {
       proverbContainer.appendChild(proverbDiv);
     });
   } catch (err) {
+    // error ဖြစ်ခဲ့သည်ရှိသော်
     console.error(err.message);
     alert(err.message);
   }
