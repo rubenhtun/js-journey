@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tower of Hanoi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes animate-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center min-h-screen font-sans"
+  >
+    <div class="container mx-auto p-8">
+      <h1
+        class="text-5xl font-extrabold text-center mb-12 text-white tracking-wide shadow-text"
+      >
+        Tower of Hanoi
+      </h1>
+      <div class="flex justify-evenly space-x-8">
+        <!-- Peg 1 (Left) -->
+        <div
+          class="peg bg-gray-800 rounded-xl p-4 w-1/5 h-[24rem] flex flex-col justify-end items-center relative overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl"
+          id="peg1"
+        >
+          <div
+            class="absolute top-0 left-0 right-0 h-4 bg-gray-700 rounded-t-xl"
+          ></div>
+          <div
+            class="absolute bottom-0 left-1/2 w-4 h-[calc(100%-2rem)] bg-gray-700 transform -translate-x-1/2"
+          ></div>
+        </div>
+
+        <!-- Peg 2 (Center) -->
+        <div
+          class="peg bg-gray-800 rounded-xl p-4 w-1/5 h-[24rem] flex flex-col justify-end items-center relative overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl"
+          id="peg2"
+        >
+          <div
+            class="absolute top-0 left-0 right-0 h-4 bg-gray-700 rounded-t-xl"
+          ></div>
+          <div
+            class="absolute bottom-0 left-1/2 w-4 h-[calc(100%-2rem)] bg-gray-700 transform -translate-x-1/2"
+          ></div>
+          <!-- All rings are put in the middle peg -->
+          <div
+            class="ring bg-red-500 h-5 w-12 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring1"
+            draggable="true"
+            data-ring="1"
+          ></div>
+          <div
+            class="ring bg-orange-500 h-5 w-16 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring2"
+            draggable="true"
+            data-ring="2"
+          ></div>
+          <div
+            class="ring bg-yellow-500 h-5 w-20 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring3"
+            draggable="true"
+            data-ring="3"
+          ></div>
+          <div
+            class="ring bg-green-500 h-5 w-24 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring4"
+            draggable="true"
+            data-ring="4"
+          ></div>
+          <div
+            class="ring bg-teal-500 h-5 w-28 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring5"
+            draggable="true"
+            data-ring="5"
+          ></div>
+          <div
+            class="ring bg-blue-500 h-5 w-32 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring6"
+            draggable="true"
+            data-ring="6"
+          ></div>
+          <div
+            class="ring bg-indigo-500 h-5 w-36 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring7"
+            draggable="true"
+            data-ring="7"
+          ></div>
+          <div
+            class="ring bg-purple-500 h-5 w-40 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring8"
+            draggable="true"
+            data-ring="8"
+          ></div>
+          <div
+            class="ring bg-pink-500 h-5 w-44 mb-1 rounded-full shadow-md transition-all duration-300 hover:brightness-110 cursor-pointer"
+            id="ring9"
+            draggable="true"
+            data-ring="9"
+          ></div>
+        </div>
+
+        <!-- Peg 3 (Right) -->
+        <div
+          class="peg bg-gray-800 rounded-xl p-4 w-1/5 h-[24rem] flex flex-col justify-end items-center relative overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-3xl"
+          id="peg3"
+        >
+          <div
+            class="absolute top-0 left-0 right-0 h-4 bg-gray-700 rounded-t-xl"
+          ></div>
+          <div
+            class="absolute bottom-0 left-1/2 w-4 h-[calc(100%-2rem)] bg-gray-700 transform -translate-x-1/2"
+          ></div>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <button
+          id="restartBtn"
+          class="bg-white text-purple-600 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-purple-100 transition-all duration-300 transform hover:scale-105"
+        >
+          Restart Game
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>
