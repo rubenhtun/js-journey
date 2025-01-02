@@ -24,7 +24,7 @@ h1 {
 
 .grid-container {
   max-width: 80%;
-  height: 75vh;
+  height: 77vh;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   gap: 5px;
