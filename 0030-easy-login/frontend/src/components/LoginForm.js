@@ -35,7 +35,7 @@ function LoginForm() {
         navigate("/user");
       } else {
         console.log(res.status);
-        setMesssage(data.message); // Error message from server
+        setMesssage(data.message); // Failed login message
       }
     } catch (err) {
       console.log(err);
