@@ -4,15 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sort Folders</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="container">
-      <h1>Sort Folders</h1>
-      <div>
-        <button id="sort">Sort</button>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+      <div
+        class="max-w-4xl mx-auto bg-gray-900 rounded-lg shadow-xl overflow-hidden"
+      >
+        <!-- Window Controls -->
+        <div
+          class="bg-gray-800 px-4 py-3 flex items-center space-x-2 border-b border-gray-700"
+        >
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex h-[80vh]">
+          <!-- Sidebar -->
+          <div class="w-64 bg-gray-800 p-4 border-r border-gray-700">
+            <button
+              class="create-folder w-full bg-blue-600 text-white rounded-lg px-4 py-2 mb-6 hover:bg-blue-700 transition-colors"
+            >
+              Create New Folder
+            </button>
+            <div class="space-y-2">
+              <button
+                class="sort-by-name w-full text-gray-300 px-4 py-2 rounded hover:bg-gray-700 transition-colors text-left"
+              >
+                Sort By Name
+              </button>
+              <button
+                class="sort-by-date w-full text-gray-300 px-4 py-2 rounded hover:bg-gray-700 transition-colors text-left"
+              >
+                Sort By Date
+              </button>
+            </div>
+          </div>
+
+          <!-- Folder Display Area-->
+          <div class="flex-1 p-6 bg-gray-900">
+            <div class="folder-container grid grid-cols-4 gap-4"></div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Script Link -->
     <script src="script.js"></script>
   </body>
 </html>
