@@ -1,0 +1,32 @@
+### **Algorithm for Sorting Folder
+
+1. **Initialize Folder Container**  
+   - Select the .folder-container element to cover child folders.  
+
+2. **Create New Folder**  
+   - When the "Create Folder" button is clicked:  
+     - Generate a unique `folderId` using the current date time.
+     - Create a new `div` element for the folder.  
+     - Add a folder icon and an input field for naming.  
+     - Append the folder to `.folder-container`.  
+     - Focus the input field immediately to write folder name.  
+
+3. **Handle Folder Naming**  
+   - When the user clicks away from the input field (`blur` event):  
+     - If the input is empty, remove the folder. (It will not be considered.)  
+     - Otherwise, replace the input tag with a `span` containing the folder name.  
+   - If the user presses "Enter," the input is confirmed and replaced.  
+
+4. **Sort Folders by Name**  
+   - When the "Sort by Name" button is clicked:  
+     - Retrieve all folder elements with querySelectorAll.
+     - Sort them alphabetically.  
+     - Reappend them in the sorted order. (Using forEach)  
+
+5. **Sort Folders by Date**  
+   - When the "Sort by Date" button is clicked:  
+     - Retrieve all folder elements with querySelectorAll.
+     - Sort them based on their `folderId` (creation date).  
+     - Reappend them in the sorted order. (Using forEach)
+
+### Created on: 29/01/2025
