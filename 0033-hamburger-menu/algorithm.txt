@@ -1,0 +1,47 @@
+**Algorithm for Toggle Hamburger Menu**
+
+1. **Initialize State:**
+   - Set a boolean variable `open` to `false`, indicating that the menu is initially closed.
+
+2. **Add Click Event Listener:**
+   - Attach an event listener to the element with ID `hamburger`.
+   - When the `hamburger` element is clicked, execute the following steps:
+
+3. **Toggle Menu Visibility:**
+   - Select the element with ID `mobile-menu`.
+   - Toggle its `hidden` class, which acts as an on/off switch.
+   - Add transition effects: `transition`, `ease-in-out`, and `duration-300` for smooth animations.
+
+4. **Update State:**
+   - Check whether `mobile-menu` contains the `hidden` class.
+   - If `hidden` is **not present**, set `open = true` (menu is open).
+   - If `hidden` is **present**, set `open = false` (menu is closed).
+
+5. **Apply Animation to Hamburger Icon:**
+   - If `open` is `true` (menu is open):
+     - Select `.top` bar and apply:
+       - `rotate-45`
+       - `translate-y-1`
+       - `transition`
+       - `duration-300`
+     - Hide `.middle` bar by removing `block`.
+     - Select `.bottom` bar and apply:
+       - `-rotate-45`
+       - `-translate-y-1`
+       - `transition`
+       - `duration-300`
+   
+   - If `open` is `false` (menu is closed):
+     - Select `.top` bar and remove:
+       - `rotate-45`
+       - `translate-y-1`
+       - `transition`
+       - `duration-500`
+     - Show `.middle` bar by adding `block`.
+     - Select `.bottom` bar and remove:
+       - `-rotate-45`
+       - `-translate-y-1`
+       - `transition`
+       - `duration-500`
+
+### Created on: 30/01/2025
