@@ -1,0 +1,52 @@
+**Algorithm for Vibe Music Player**
+
+1. **Initialize Music List:**
+   - Create an array `music` containing objects with `title`, `artist`, `src` (audio file path), and `cover` (image path).
+   - Define a variable `currentMusic` to track the currently playing song index.
+
+2. **Access DOM Elements:**
+   - Retrieve elements using `getElementById` for the cover image, song title, artist name, audio element, seek bar, current time, total time, and control buttons.
+
+3. **Play/Pause Button Functionality:**
+   - Add an event listener to `playPauseBtn`.
+   - If the audio is paused, play it and change the button icon to a pause symbol.
+   - If the audio is playing, pause it and change the button icon to a play symbol.
+
+4. **Next Button Functionality:**
+   - Add an event listener to `nextBtn`.
+   - Increment `currentMusic` to the next song index (looping back to the start if at the last song).
+   - Call `loadMusic(currentMusic)` to update the player with the new song.
+   - Auto-play the new song and update the play button to a pause symbol.
+
+5. **Previous Button Functionality:**
+   - Add an event listener to `prevBtn`.
+   - Decrement `currentMusic` to the previous song index (looping to the last song if at the first song).
+   - Call `loadMusic(currentMusic)` to update the player with the new song.
+   - Auto-play the new song and update the play button to a pause symbol.
+
+6. **Load Music Function (`loadMusic(i)`)**
+   - Update the cover image, song title, artist name, and audio source based on the index `i`.
+   - Reset the seek bar to 0.
+
+7. **Initialize Music on Page Load:**
+   - Call `loadMusic(currentMusic)` to set up the first song when the page loads.
+
+8. **Update Total Duration of Song:**
+   - Listen for the `loadedmetadata` event on the `audio` element.
+   - Display the total duration of the song using the `time()` function.
+
+9. **Update Seek Bar and Current Time:**
+   - Listen for the `timeupdate` event on the `audio` element.
+   - Update the seek bar position based on `audio.currentTime`.
+   - Display the formatted current time using the `time()` function.
+
+10. **Seek Bar Manual Adjustment:**
+    - Listen for the `input` event on the `seekBar`.
+    - Adjust `audio.currentTime` based on the seek bar position.
+
+11. **Format Time (`time(seconds)`)**
+    - Convert total seconds into minutes and seconds.
+    - Ensure seconds are displayed with two digits (e.g., `3:05`).
+    - Return the formatted time string.
+
+### Created on: 4/02/2025

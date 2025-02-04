@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Music Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-gray-900 text-white"
+  >
+    <div class="w-96 p-6 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold mb-4">Vibe Music Player</h2>
+      <div class="mb-4">
+        <img
+          id="cover"
+          src="./covers/Mood-Maze.jpg"
+          alt="Album Cover"
+          class="w-32 h-32 mx-auto rounded-lg"
+        />
+      </div>
+      <p id="song-title" class="text-lg font-semibold">Trendsetter</p>
+      <p id="artist" class="text-sm text-gray-400">Mood Maze</p>
+      <audio id="audio"></audio>
+
+      <input
+        id="seek-bar"
+        type="range"
+        value="0"
+        class="w-full mt-4 cursor-pointer"
+        min="0"
+        max="100"
+      />
+      <div class="flex justify-between text-sm text-gray-400">
+        <span id="current-time">0:00</span>
+        <span id="total-time">0:00</span>
+      </div>
+
+      <div class="flex justify-center items-center mt-4 space-x-4">
+        <button id="prev" class="px-4 py-3 bg-gray-700 rounded-full">
+          <i class="fa-solid fa-backward-fast"></i>
+        </button>
+        <button id="play-pause" class="px-5 py-3 bg-blue-500 rounded-full">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="next" class="px-4 py-3 bg-gray-700 rounded-full">
+          <i class="fa-solid fa-forward-fast"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
