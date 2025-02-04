@@ -1,0 +1,21 @@
+Algorithm for Generating a Folder Structure in JavaScript
+
+1. Define the folder structure as an array of objects, where each object represents a folder.
+   - Each folder object contains a `name` property.
+   - Some folders have a `subfolders` property, which is an array of subfolder objects.
+
+2. Create a function `createFolderList(folders)` that generates an unordered list (`ul`) of folders:
+   - Initialize an empty `ul` element.
+   - Iterate over each folder object in the provided `folders` array.
+     - Create a `li` element for the folder.
+     - Set its inner text to the folder's `name`.
+     - Add a CSS class `folder` to the `li`.
+     - Append the `li` to the `ul`.
+     - If the folder has `subfolders`, recursively call `createFolderList` with `subfolders` as input.
+       - The returned `ul` is initially hidden (`display: none`).
+       - Append this `ul` as a child of the current `li`.
+       - Add a click event listener to the `li` that toggles the visibility of the subfolder `ul`.
+
+3. Call `createFolderList(folderStructure)` with the predefined folder structure to generate the list.
+
+4. Append the generated folder list to the HTML element with the ID `folderStructure`.
