@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Image Filter Gallery</title>
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+      <h1 class="text-2xl font-bold text-center mb-6">
+        Dynamic Image Filter Gallery
+      </h1>
+
+      <input type="file" id="imageInput" class="mb-4 w-full" accept="image/*" />
+
+      <div class="flex flex-col items-center mb-6">
+        <img
+          id="previewImage"
+          src=""
+          alt="Preview"
+          class="max-w-full h-auto mb-4 hidden"
+        />
+
+        <!-- Sliders for filters -->
+        <label for="grayscale" class="w-full mb-2">Grayscale</label>
+        <input
+          type="range"
+          id="grayscale"
+          min="0"
+          max="100"
+          class="w-full mb-4"
+        />
+
+        <label for="blur" class="w-full mb-2">Blur</label>
+        <input type="range" id="blur" min="0" max="10" class="w-full mb-4" />
+
+        <label for="brightness" class="w-full mb-2">Brightness</label>
+        <input
+          type="range"
+          id="brightness"
+          min="0"
+          max="200"
+          value="100"
+          class="w-full mb-4"
+        />
+
+        <label for="contrast" class="w-full mb-2">Contrast</label>
+        <input
+          type="range"
+          id="contrast"
+          min="0"
+          max="200"
+          value="100"
+          class="w-full mb-4"
+        />
+      </div>
+
+      <button
+        id="resetButton"
+        class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+      >
+        Reset Filters
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+1. Initialize page elements:
+   - Input (file upload) for image selection
+   - Image element to display the selected image
+   - Sliders for grayscale, blur, brightness, contrast
+   - Reset button
+
+2. Event Listener for File Upload:
+   - If image file selected:
+     - Create a FileReader
+     - Read the file and set the image source
+     - Display the image
+
+3. Event Listeners for Sliders:
+   - For each slider (grayscale, blur, brightness, contrast):
+     - Get the value of the slider
+     - Apply the corresponding filter to the image's style
+
+4. Event Listener for Reset Button:
+   - Reset sliders to default values
+   - Remove any filters from the image
+
+5. Edge Case Handling:
+   - If no image selected, hide the preview or prompt the user to upload an image
+   - Validate file type for image upload
