@@ -7,32 +7,36 @@
 
     <!-- Tailwind CSS CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
   </head>
-  <body
-    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 p-6"
-  >
-    <h1 class="text-4xl font-extrabold text-white mb-6 drop-shadow-lg">
-      Image Search Engine
-    </h1>
-    <div class="bg-white p-8 rounded-lg shadow-2xl w-full max-w-lg text-center">
-      <input
-        type="text"
-        id="search-input"
-        class="w-full p-3 border rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 outline-none text-gray-700"
-        placeholder="Search for images..."
-      />
-      <button
-        onclick="searchImages()"
-        class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
-      >
-        🔍 Search
-      </button>
+  <body class="flex flex-col min-h-screen bg-gray-100">
+    <div class="image-search-engine max-w-6xl mx-auto w-full px-4 my-4">
+      <div class="search-bar relative w-full max-w-2xl mx-auto">
+        <input
+          type="text"
+          placeholder="Search for images..."
+          id="search-input"
+          class="w-full pl-10 pr-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all duration-200 shadow-sm"
+        />
+        <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </div>
     </div>
+
+    <!-- Resulted Images -->
     <div
-      id="image-results"
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 w-full max-w-5xl"
+      id="resulted-images-list"
+      class="images-list max-w-6xl mx-auto w-full px-4 my-4 columns-1 sm:columns-2 md:columns-3 lg:columns-4 space-y-3"
     ></div>
 
+    <!-- Custom JavaScript File -->
     <script src="script.js"></script>
   </body>
 </html>
