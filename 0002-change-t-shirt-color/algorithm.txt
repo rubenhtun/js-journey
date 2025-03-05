@@ -1,5 +1,5 @@
-### **Algorithm for Changing T-Shirt Color**  
+### Algorithm for Changing T-Shirt Color
 
-1. **Get the T-shirt image element** using `document.getElementById("t-shirt-img")`.  
-2. **Change the image source** to `"imgs/{color}-t-shirt.svg"`, replacing `{color}` with the given parameter input.  
-3. **Call the function** with a color name 
+1. Get the T-shirt image element using document.getElementById("t-shirt-img").  
+2. Change the image source to "imgs/{color}-t-shirt.svg", replacing {color} with the given parameter input.  
+3. Call the function with a color name 
