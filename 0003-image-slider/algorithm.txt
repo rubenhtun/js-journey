@@ -1,34 +1,34 @@
-**Algorithm for Image Slider with Prev/Next Buttons**  
+Algorithm for Image Slider with Prev/Next Buttons  
 
-1. **Initialize Image Array:**  
+1. Initialize Image Array  
    - Create an array imgs containing image URLs.  
    - Example: const imgs = ["robotic-eng(1).jpg", "robotic-eng(2).jpg", "robotic-eng(3).jpg"];  
 
-2. **Set Up Index Tracking:**  
+2. Set Up Index Tracking  
    - Declare a variable currentImgIndex and set it to 0.  
    - This variable keeps track of the currently displayed image.  
 
-3. **Select DOM Elements:**  
+3. Select DOM Elements  
    - Use document.getElementById to select the slider-image element where images will be displayed.  
    - Select the prevBtn and nextBtn buttons to handle navigation.  
 
-4. **Define Image Change Function:**  
+4. Define Image Change Function  
    - Create a function changeImage().  
    - Update the src attribute of sliderImage using imgs[currentImgIndex].  
    - The image path should be prefixed correctly (e.g., "img/" + imgs[currentImgIndex]).  
 
-5. **Attach Event Listeners to Buttons:**  
-   - Add a click event listener to nextBtn:  
+5. Attach Event Listeners to Buttons  
+   - Add a click event listener to nextBtn  
      - If currentImgIndex is at the last index, reset it to 0.  
      - Otherwise, increase currentImgIndex by 1.  
      - Call changeImage() to update the displayed image.  
 
-   - Add a click event listener to prevBtn:  
+   - Add a click event listener to prevBtn  
      - If currentImgIndex is at 0, set it to the last index (imgs.length - 1).  
      - Otherwise, decrease currentImgIndex by 1.  
      - Call changeImage() to update the displayed image.  
 
-6. **Ensure Smooth Navigation:**  
+6. Ensure Smooth Navigation  
    - Implement boundary conditions to allow seamless cycling through images.  
    - Clicking "Next" on the last image loops back to the first image.  
    - Clicking "Previous" on the first image loops back to the last image. 
