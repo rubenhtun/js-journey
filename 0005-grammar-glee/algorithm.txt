@@ -1,0 +1,39 @@
+Algorithm for Grammar Quiz Navigation and Scoring System
+
+1. **Initialization**
+   - Set "totalQ" to 10, representing the total number of questions.
+   - Retrieve elements for navigation buttons ("prevButton" and "nextButton").
+   - Retrieve all questions ("ques") and convert them into an array ("quesArr").
+   - Initialize "qIndex" to 0, ensuring the first question is displayed while others are hidden.
+   - Retrieve all progress indicators ("progress") and convert them into an array ("progArr").
+   - Set the background color of the first progress indicator to active while others remain inactive.
+
+2. **Previous Button Click Event**
+   - Check if "qIndex" is greater than 0.
+   - Hide the current question and decrement "qIndex".
+   - Display the previous question.
+   - Update progress indicators: Set background color to active for completed questions and reset for upcoming ones.
+   - Ensure the submit button is hidden if not on the last question.
+
+3. **Next Button Click Event**
+   - Check if "qIndex" is less than the total number of questions.
+   - Hide the current question and increment "qIndex".
+   - Display the next question.
+   - Update progress indicators based on the new "qIndex".
+   - If the last question is reached, display the submit button.
+
+4. **Submit Button Click Event**
+   - Initialize "score" to 0.
+   - Loop through each question (from 1 to "totalQ").
+   - Retrieve the selected answer for each question.
+   - If the selected answer is correct (value is "true"), increment the "score".
+   - Call "displayScore" function to show the result.
+
+5. **Display Score Function**
+   - Hide all questions, the navigation button container, and the progress bar.
+   - Display the result container showing the final score.
+   - Reveal the restart button.
+
+6. **Restart Button Click Event**
+   - Reload the page to reset the quiz.
+
