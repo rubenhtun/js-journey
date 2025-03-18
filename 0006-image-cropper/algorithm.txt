@@ -1,0 +1,70 @@
+Algorithm: Image Upload and Crop Functionality
+
+Step 1: Initialize Variables
+1. Select the file input element ("fileUpload").
+2. Select the image element ("image").
+3. Select the output image element ("output").
+4. Select the crop button ("btnCrop").
+5. Select the aspect ratio dropdown ("aspectRatioSelect").
+6. Select the download button ("downloadBtn").
+7. Select the element to hide ("hide").
+8. Declare a variable ("cropper") to store the Cropper instance.
+
+Step 2: Handle File Upload
+1. Add a "change" event listener to the "fileUpload" element.
+2. When the user selects a file:
+   - Retrieve the selected file.
+   - Check if the file is an image ("file.type.startsWith("image/")").
+   - If it is an image:
+     - Create a "FileReader" object.
+     - When the "FileReader" finishes reading the file:
+       - Set the "src" attribute of the "image" element to the file's data URL.
+       - Display the "image" element.
+       - Display the "btnCrop" button.
+       - Call the "initializeCropper()" function.
+
+Step 3: Initialize Cropper
+1. Inside the "initializeCropper()" function:
+   - If a "cropper" instance already exists "if (cropper)":
+     - Destroy the existing instance using "cropper.destroy()".
+   - Initialize a new "Cropper" instance on the "image" element using "new Cropper()".
+   - Configure the Cropper options:
+     - "aspectRatio": 1 (square aspect ratio).
+     - "viewMode": 1 (restrict the crop box to the container).
+     - "autoCropArea": 1 (automatically crop the image).
+     - "movable": true (allow moving the crop box).
+     - "zoomable": true (allow zooming the image).
+     - "scalable": false (disable scaling the image).
+     - "cropBoxResizable": true (allow resizing the crop box).
+
+Step 4: Handle Aspect Ratio Change
+1. Add a "change" event listener to the "aspectRatioSelect" element.
+2. When the user selects a new aspect ratio:
+   - Retrieve the selected value from the dropdown.
+   - If the selected value is ""free"", set the aspect ratio to "NaN" (no fixed ratio).
+   - Otherwise, evaluate the selected ratio (e.g., "eval("16/9")") and set it using "cropper.setAspectRatio()".
+
+Step 5: Handle Crop Button Click
+1. Add a "click" event listener to the "btnCrop" button.
+2. When the user clicks the crop button:
+   - Use "cropper.getCroppedCanvas()" to get the cropped image as a canvas element.
+   - Convert the canvas to a data URL using "canvas.toDataURL("image/png")".
+   - Set the "src" attribute of the "output" element to the data URL.
+   - Display the "downloadBtn" button.
+   - Hide the "hide" element.
+
+Step 6: Handle Download Button Click
+1. Add a "click" event listener to the "downloadBtn" button.
+2. When the user clicks the download button:
+   - Create a temporary "<a>" element.
+   - Set the "href" attribute of the "<a>" element to the "output" image's "src".
+   - Set the "download" attribute of the "<a>" element to ""cropped-image.png"".
+   - Programmatically trigger a click on the "<a>" element to download the image.
+
+Summary of the Algorithm
+1. Initialize all required elements and variables.
+2. Upload an image and display it on the page.
+3. Initialize Cropper.js to enable cropping functionality.
+4. Update the aspect ratio of the crop box based on user selection.
+5. Crop the image and display the cropped result.
+6. Download the cropped image when the user clicks the download button.
