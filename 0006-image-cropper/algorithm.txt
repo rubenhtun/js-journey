@@ -58,7 +58,7 @@ Step 6: Handle Download Button Click
 2. When the user clicks the download button:
    - Create a temporary "<a>" element.
    - Set the "href" attribute of the "<a>" element to the "output" image's "src".
-   - Set the "download" attribute of the "<a>" element to ""cropped-image.png"".
+   - Set the "download" attribute of the "<a>" element to "'cropped-image.png'".
    - Programmatically trigger a click on the "<a>" element to download the image.
 
 Summary of the Algorithm
