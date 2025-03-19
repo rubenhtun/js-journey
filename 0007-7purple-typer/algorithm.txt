@@ -1,0 +1,60 @@
+Algorithm: 7Purple Typing Speed Test
+
+Step 1: Initialize Variables & DOM Elements
+1. Declare a text array (`textList`) containing multiple paragraphs.
+2. Select the text display element (`#text-to-type`) and store in `textDis`.
+3. Select the typing input field (`#typing-input`) and store in `typingInput`.
+4. Select the restart button (`#restart-button`) and store in `restartBtn`.
+5. Select the speed display element (`#speed`).
+6. Select the accuracy display element (`#accuracy`).
+
+Step 2: Define Function to Display Text
+1. Create a function `displayText(randomText)`.
+2. Inside the function:
+   - Clear the content of `textDis` by setting `innerHTML` to an empty string.
+   - Split the given `randomText` paragraph into individual words.
+   - For each word:
+     - Create a `<span>` element.
+     - Set its `textContent` to the word followed by a space.
+     - Append the span to `textDis`.
+
+Step 3: Define Function to Display Random Paragraph
+1. Create a function `displayRandomText()`.
+2. Inside the function:
+   - Randomly select one paragraph from `textList`.
+   - Pass the selected paragraph to `displayText()` to render on screen.
+   - Clear the `typingInput` field by setting its value to an empty string.
+   - Focus the `typingInput` for improved user experience.
+
+Step 4: Display Initial Text
+1. Call `displayText()` with the first paragraph in `textList` to show a default paragraph when the page loads.
+
+Step 5: Add Input Event Listener to Typing Field
+1. Add an `"input"` event listener to `typingInput`.
+2. Inside the event listener:
+   - Split the user's typed input into words and store in `typedWords`.
+   - Split the displayed paragraph (retrieved from `textDis.innerText`) into words and store in `displayedWords`.
+   - Select all `<span>` elements inside `textDis` and store in `words`.
+   - Loop through each word:
+     - If the typed word at the same index matches the displayed word, change the word’s color to `"purple"`.
+     - If the typed word exists but is incorrect, change the color to `"red"`.
+     - If the typed word doesn't exist yet, set the color to `"black"`.
+3. After the loop:
+   - Check if the last typed word matches the last displayed word.
+   - If so, call `displayRandomText()` to load a new paragraph.
+
+
+Step 6: Add Click Event Listener to reStart Button
+1. Add a `"click"` event listener to `restartBtn`.
+2. Inside the event listener:
+   - Call `displayRandomText()` to display a new random paragraph and reset the input.
+
+
+Summary of the Algorithm
+1. Initialize all necessary variables, text data, and DOM elements.
+2. Display an initial paragraph when the page loads.
+3. Allow the user to type in an input field.
+4. Continuously check user input word by word:
+   - Color correct words purple, incorrect ones red, and untyped ones black.
+5. Automatically display a new paragraph once the current one is correctly typed.
+6. Provide a restart button to manually load a new random paragraph.

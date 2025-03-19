@@ -1,3 +1,4 @@
+// ======= Text Data =======
 const textList = [
   "The sun rose gently over the horizon, casting a warm golden glow on the quiet town below. Birds chirped as the first rays touched the rooftops, waking the world from its slumber. The day promised to be peaceful and bright.",
   "Technology has transformed the way we live, work, and communicate. With the click of a button, we can connect with anyone around the globe, share ideas, and collaborate in real time. This digital age has brought the world closer together.",
@@ -8,46 +9,62 @@ const textList = [
   "Books have the power to transport us to other worlds. Through stories, we experience adventures, face challenges, and learn valuable lessons. Every book holds a universe waiting to be explored.",
 ];
 
+// ======= DOM Element References =======
 const textDis = document.querySelector("#text-to-type");
 const typingInput = document.querySelector("#typing-input");
-const startBtn = document.querySelector("#start-button");
+const restartBtn = document.querySelector("#restart-button");
 const speedDisplay = document.querySelector("#speed");
 const accuracyDisplay = document.querySelector("#accuracy");
 
-// Function to display the text in individual spans
+// ======= Function to Display Text Paragraph in Spans =======
 const displayText = (randomText) => {
-  textDis.innerHTML = "";
+  textDis.innerHTML = ""; // Clear previous text
   randomText.split(" ").forEach((word) => {
     const wordElement = document.createElement("span");
-    wordElement.textContent = word + " ";
+    wordElement.textContent = word + " "; // Add space after each word
     textDis.appendChild(wordElement);
   });
 };
 
-// Call this initially to display the first paragraph
+// ======= Function to Display a Random Paragraph =======
+const displayRandomText = () => {
+  const randomParagraphText =
+    textList[Math.floor(Math.random() * textList.length)];
+  displayText(randomParagraphText);
+  typingInput.value = ""; // Clear input field
+  typingInput.focus(); // Focus on input for better UX
+};
+
+// ======= Initial Paragraph Display =======
 displayText(textList[0]);
 
-// Input event listener to track typing and calculate accuracy
+// ======= Input Event Listener: Track Typing & Color Words =======
 typingInput.addEventListener("input", () => {
   const typedWords = typingInput.value.trim().split(" ");
   const displayedWords = textDis.innerText.trim().split(" ");
   const words = textDis.querySelectorAll("span");
 
+  // Check each typed word against displayed word
   words.forEach((word, i) => {
     if (typedWords[i] === displayedWords[i]) {
-      word.style.color = "purple";
+      word.style.color = "purple"; // Correct word
     } else if (typedWords[i]) {
-      word.style.color = "red";
+      word.style.color = "red"; // Incorrect word
     } else {
-      word.style.color = "black";
+      word.style.color = "black"; // Untyped word
     }
   });
+
+  // ======= Check if All Words Typed Correctly to Display New Paragraph =======
+  if (
+    typedWords[typedWords.length - 1] ===
+    words[words.length - 1].innerText.trim()
+  ) {
+    displayRandomText();
+  }
 });
 
-// Start button click event to begin timing and display text
-startBtn.addEventListener("click", () => {
-  const randomParagraphText =
-    textList[Math.floor(Math.random() * textList.length)];
-  displayText(randomParagraphText);
-  typingInput.value = "";
+// ======= Restart Button Event: Display Random Paragraph =======
+restartBtn.addEventListener("click", () => {
+  displayRandomText();
 });
