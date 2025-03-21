@@ -48,6 +48,7 @@ Step 6: Add Click Event Listener to reStart Button
 1. Add a `"click"` event listener to `restartBtn`.
 2. Inside the event listener:
    - Call `displayRandomText()` to display a new random paragraph and reset the input.
+   - Clear input field
 
 
 Summary of the Algorithm

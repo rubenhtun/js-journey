@@ -67,4 +67,5 @@ typingInput.addEventListener("input", () => {
 // ======= Restart Button Event: Display Random Paragraph =======
 restartBtn.addEventListener("click", () => {
   displayRandomText();
+  typingInput.value = ""; // Clear input field
 });
