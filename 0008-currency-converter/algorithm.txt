@@ -1,0 +1,31 @@
+Algorithm for `convertCurrency` Function
+
+1. Retrieve Input Values:
+   - Get the amount to be converted from the HTML input element with the ID `amount`.
+   - Get the source currency code from the HTML select element with the ID `sourceCurrency`.
+   - Get the target currency code from the HTML select element with the ID `targetCurrency`.
+   - Get the result display element with the ID `result`.
+
+2. Prepare API URL:
+   - Define the API key (in this case: `"d7fb994f3b0eab016e673830"`).
+   - Construct the API URL using the source currency to fetch the latest exchange rates.
+
+3. Fetch Exchange Rate Data:
+   - Make an asynchronous HTTP request (using `fetch`) to the API URL.
+   - Check if the network response is successful. If not, throw an error.
+
+4. Process API Response:
+   - Parse the response data into JSON format.
+   - Check if the `conversion_rates` field exists in the response.
+
+5. Perform Currency Conversion:
+   - If `conversion_rates` is available:
+     - Retrieve the exchange rate for the target currency.
+     - Multiply the entered amount by the exchange rate to get the converted amount.
+     - Round the result to two decimal places.
+     - Display the converted amount in the result element.
+
+6. Handle Errors:
+   - If any error occurs during fetching or processing:
+     - Log the error to the console.
+     - Display an error message in the result element.
