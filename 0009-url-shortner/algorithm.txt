@@ -1,0 +1,40 @@
+Algorithm for Shorten URL Form Submission and Copy Function
+
+1. Retrieve Input and Display Elements:
+- Get the form element with the ID `urlForm`.
+- Get the result display container with the ID `result`.
+- Get the input field to display the shortened URL with the ID `shortUrl`.
+
+2. Add Event Listener for Form Submission:
+- Attach a `submit` event listener to the `urlForm` element.
+- On form submission:
+  - Prevent the default form behavior using `e.preventDefault()`.
+  - Retrieve the value from the input field with ID `longUrl` and trim whitespace.
+
+3. Validate User Input:
+- Check if the input URL is empty:
+  - If yes, show an alert message: `"Please enter a URL"`.
+  - Terminate the function.
+
+4. Generate Short URL Using API:
+- Inside an `async` function:
+  - Construct the TinyURL API endpoint using the encoded long URL.
+  - Send a `fetch` request to the TinyURL API.
+  - Check if the response is successful:
+    - If not, throw an error with the message `"Failed to shorten URL!"`.
+
+5. Handle API Response:
+- Retrieve the response text which contains the shortened URL.
+- Remove the `"hidden"` class from the result container to display the result.
+- Set the value of the `shortUrl` input field to the returned shortened URL.
+
+6. Handle Errors During API Call:
+- Use a `try-catch` block:
+  - If an error occurs, alert the error message to the user.
+
+7. Copy to Clipboard Functionality:
+- Define a function `copyToClipboard`:
+  - Select the text inside the `shortUrl` input field.
+  - Execute `document.execCommand("copy")` to copy the URL.
+  - Change the text of the button with class `.copyUrlBtn` to `"!Copied"`.
+  - After 2 seconds, revert the button text back to `"Copy"`.
