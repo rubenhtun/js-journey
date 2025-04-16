@@ -1,0 +1,60 @@
+Algorithm for Recipe Finder App
+
+1. Define API Base URL
+   - Set the base URL of TheMealDB API.
+
+2. Load Categories on Page Load
+   - On window load, call the `loadCategories()` function.
+   - Inside `loadCategories()`:
+     - Fetch category data from API.
+     - For each category in the response:
+       - Create an `<option>` element.
+       - Set its value and text content to the category name.
+       - Append the option to the category dropdown (`categorySelect`).
+
+3. Search by User Input
+   - When the user presses "Enter" in the search input:
+     - Call `searchRecipes()` function.
+   - Inside `searchRecipes()`:
+     - Get the user input value.
+     - Return early if the input is empty.
+     - Show the loading indicator.
+     - Clear any existing search results.
+     - Fetch recipe data from API using the input as a query parameter.
+     - If successful, call `displayResults()` with the returned meals.
+     - Handle errors and hide the loading indicator afterward.
+
+4. Search by Category
+   - When a category is selected and search triggered:
+     - Call `searchByCategory()` function.
+   - Inside `searchByCategory()`:
+     - Get the selected category from the dropdown.
+     - Show loading indicator and clear results.
+     - Fetch meals from the API based on the selected category.
+     - Pass the meals to `displayResults()` or show an error if fetching fails.
+     - Hide the loading indicator at the end.
+
+5. Display Results
+   - `displayResults(meals)`:
+     - Check if meals array is empty. If yes, show "No recipes found" message.
+     - For each meal:
+       - Create a card with meal name and image.
+       - Add a "View Recipe" button that calls `showRecipeDetails(mealId)`.
+
+6. Show Recipe Details in Modal
+   - `showRecipeDetails(mealId)`:
+     - Show loading indicator and open modal popup.
+     - Fetch full recipe detail using `lookup.php?i={mealId}`.
+     - Extract ingredients and measures from the response.
+     - Display recipe image, category, origin, ingredients list, and instructions.
+     - If a YouTube tutorial exists, show a link to it.
+     - Hide the loading indicator.
+
+7. Close Modal
+   - When modal background is clicked or close button is used:
+     - Call `closeModal()` to hide the recipe modal.
+
+8. Helper Functions
+   - `showLoading(show)` toggles the loading spinner visibility.
+   - `clearResults()` clears the current results from the DOM.
+   - `displayError(message)` shows a red error message in the results section.
