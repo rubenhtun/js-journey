@@ -1,0 +1,27 @@
+Algorithm: Password Generator and Copier
+
+1. Initialize Variables
+   - Select DOM elements: password display, generate button, copy button, checkboxes for character types, password length input, and success message container.
+   - Define character sets: lowercase, uppercase, numbers, and symbols.
+
+2. Generate Password on Button Click
+   - When the user clicks the Generate button:
+     1. Start with an empty string `chars` to collect allowed characters.
+     2. Check which character-type checkboxes are selected:
+        - If "Include Lowercase" is checked, append lowercase letters to `chars`.
+        - If "Include Uppercase" is checked, append uppercase letters to `chars`.
+        - If "Include Numbers" is checked, append number characters to `chars`.
+        - If "Include Symbols" is checked, append special characters to `chars`.
+     3. Retrieve the desired password length from the input field.
+     4. Initialize an empty password string `psw`.
+     5. Loop through the range of the desired length:
+        - Generate a random index based on `chars.length`.
+        - Append the character at that index to `psw`.
+     6. Display the generated password in the password input field.
+
+3. Copy Password to Clipboard
+   - When the user clicks the Copy button:
+     1. Check if a password is present in the input field.
+     2. If present, use `navigator.clipboard.writeText()` to copy the password.
+     3. Show a temporary success message for 2 seconds.
+     4. After 2 seconds, hide the success message again.
