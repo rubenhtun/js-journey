@@ -1,0 +1,33 @@
+Note-Taking App Algorithm
+
+1. Initialize DOM Elements:
+   - Get references to input, button, and container elements by their IDs:
+     - `noteInput` for typing notes
+     - `addNoteBtn` for adding a new note
+     - `notesContainer` for displaying note cards
+
+2. Initialize Notes Storage:
+   - Create an empty array `notes` to hold all note entries.
+
+3. Function: renderingNotes()
+   - Clear the container using `innerHTML = ""` to avoid duplicates.
+   - Loop through each note in the `notes` array using `forEach`.
+   - For each note:
+     - Create a `div` element (`noteCard`) styled with Tailwind CSS.
+     - Create a `p` tag (`noteText`) and set the note content.
+     - Create a `button` (`deleteBtn`) for deleting the note.
+     - Add click event to `deleteBtn` to call `deleteNote(index)`.
+     - Append `noteText` and `deleteBtn` to `noteCard`.
+     - Append `noteCard` to `notesContainer`.
+
+4. Add Note Event:
+   - On `addNoteBtn` click:
+     - Get the value of `noteInput` and trim it.
+     - If input is not empty:
+       - Push the note to `notes` array.
+       - Clear the `noteInput` field.
+       - Call `renderingNotes()` to update the display.
+
+5. Function: deleteNote(index)
+   - Remove the note at the given index using `splice`.
+   - Call `renderingNotes()` to refresh the display.
