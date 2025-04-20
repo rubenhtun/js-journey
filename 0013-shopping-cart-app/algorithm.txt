@@ -1,0 +1,46 @@
+Algorithm: Product Shopping and Cart Management
+
+1. Initialize Data
+- Create an array named `products` that contains objects with `id`, `name`, and `price`.
+
+2. Display All Products
+- Loop through each product in `products` using `forEach`.
+  - For each product:
+    - Create a `div` element (`productCard`) with relevant CSS classes.
+    - Set its inner HTML to display:
+      - Product name
+      - Product price
+      - "Add to Cart" button with `onclick="addToCart(product.id)"`.
+    - Append the `productCard` to the DOM element with id `product-list`.
+
+3. Handle Add to Cart
+- Define a function `addToCart(productId)`:
+  - Find the product in the `products` array matching the given `productId`.
+  - If found, push it into the `cart` array.
+  - Call `productsInCart()` to update the cart UI.
+
+4. Display Products in Cart
+- Define a function `productsInCart()`:
+  - Clear existing content in the `cart-items` DOM element.
+  - Loop through `cart` and for each item:
+    - Create a `li` element to display product name and price.
+    - Add a "Remove" button with `onclick="removeFromCart(index)"`.
+    - Append the `li` to `cart-items`.
+  - Call `sumOfPrice()` to update the total.
+
+5. Calculate Total Price
+- Define a function `sumOfPrice()`:
+  - Use `reduce()` to calculate the sum of all product prices in `cart`.
+  - Update the DOM element with id `total-price` to show the total in currency format.
+
+6. Remove from Cart
+- Define a function `removeFromCart(i)`:
+  - Remove the item at index `i` from the `cart` array using `splice()`.
+  - Call `productsInCart()` to re-render the cart.
+
+7. Checkout
+- Attach a click event listener to the "Checkout" button:
+  - When clicked:
+    - Show an alert thanking the user and displaying the total price.
+    - Clear the `cart` array.
+    - Call `productsInCart()` to reset the cart display.
