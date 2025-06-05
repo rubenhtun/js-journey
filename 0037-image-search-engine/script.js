@@ -21,7 +21,7 @@ const searchImage = async () => {
 
   // Fetch images from Unsplash API
   const response = await fetch(
-    "https://api.unsplash.com/search/photos?query=" + query + "&client_id="
+    "https://api.unsplash.com/search/photos?query=" + query + "&client_id=" // Add your Unsplash API access key
   );
 
   const images = await response.json();
